@@ -132,6 +132,41 @@ Each of these analytical steps contributes to a comprehensive understanding of t
 
 ---
 
+## Preprocessing
+
+The preprocessing phase is essential for cleaning and standardizing the dataset to enhance the performance of sentiment analysis models. This section details the steps taken to preprocess the tweets.
+
+### Preprocess Caption
+
+The initial step involves a comprehensive preprocessing of tweet texts, which includes converting all text to lowercase, removing hashtags, numbers, non-ASCII characters, URLs, mentions, punctuation, and excessive whitespaces. Additionally, repeating characters are reduced to a single instance to normalize variations in word spellings. Emoji codes within the tweets are converted to their corresponding emoji characters to retain emotional expressions. These steps collectively refine the text, making it more uniform and analytically viable.
+
+### Replace Slang Words
+
+Slang words prevalent in social media texts are replaced with their standard equivalents using a predefined dictionary of slang terms. This process ensures that informal expressions commonly used in tweets are standardized, aiding in the accurate interpretation of the text's sentiment.
+
+### Apply Preprocessing
+
+The cleaned tweet texts undergo further preprocessing, which includes applying the aforementioned caption preprocessing and slang replacement functions. This multi-step cleaning process ensures that the dataset is devoid of irrelevant and noisy elements, focusing solely on meaningful content.
+
+#### Dataset Post-preprocessing
+![image](https://github.com/aridofflimits/SentimentAnalysisPilpres2019/assets/147245715/63aafb5b-4318-4a31-aaa8-8060cd1e1119)
+
+### Word Cloud After Preprocessing
+
+Post-preprocessing, word clouds are generated for each sentiment category to visually represent the most common words in the cleaned dataset. This visualization helps in assessing the effectiveness of the preprocessing steps and in understanding the predominant themes and expressions in the refined texts, providing insights into the sentiments expressed in the tweets.
+
+#### Word Cloud for Positive Sentiment (Post-preprocessing)
+![image](https://github.com/aridofflimits/SentimentAnalysisPilpres2019/assets/147245715/f33a6a81-3f91-4f30-b493-790b4ad07fe8)
+
+#### Word Cloud for Negative Sentiment (Post-preprocessing)
+![image](https://github.com/aridofflimits/SentimentAnalysisPilpres2019/assets/147245715/4c82b075-0797-4e80-820b-308a8aed16ae)
+
+#### Word Cloud for Neutral Sentiment (Post-preprocessing)
+![image](https://github.com/aridofflimits/SentimentAnalysisPilpres2019/assets/147245715/353fe57f-cdcd-480a-a32f-b8af85ea2de2)
+
+---
+
+
 ## Model Architecture
 
 The sentiment analysis model utilizes two different approaches: Random Forest and LSTM.
